@@ -152,3 +152,41 @@ a {
     
 }
 
+.menu-lateral {
+    grid-area: menu;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.menu-lateral a{
+    display: block;
+    padding: 15px 35px;
+    color: #000;
+    /*min-width: 800px;*/
+}
+
+.menu-lateral a:hover{
+    background-color: #e5e5e5
+}
+
+.menu-lateral a.active{
+    background-color: #e5e5e5;
+    font-weight: bold;
+}
+
+.menu-lateral .fas{
+    color: #606060;
+    margin-right: 32px;
+    width: 20px;
+    text-align: center;
+}
+
+.menu-lateral a.active .fas{
+    color: #ff0000;
+}
+
+.menu-lateral hr{
+    margin: 20px 0;
+    border: 1px solid #dfdfdf;
+}
+
