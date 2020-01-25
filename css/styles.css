@@ -29,3 +29,126 @@ a {
     grid-template-columns: minmax(300px, 18%) auto;
     transition: all 3s ease 1s;
 }
+
+.header {
+    grid-area: header;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    /*text-align: center;*/
+    justify-content: space-between;
+    grid-gap: 20px;
+    grid-template-areas: "logo busqueda iconos";
+
+}
+
+.header .contenedor-logo {
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+}
+
+.header .contenedor-logo .boton-menu {
+    border: none;
+    padding: 10px;
+    background: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.header .contenedor-logo .boton-menu:hover {
+    background-color: #E7E7E7
+}
+
+.header .contenedor-logo .logo .fas {
+    background-color: #ff0000;
+    padding: 7px 12px;
+    border-radius: 4px;
+    font-size: 8px;
+    color: #fff;
+    position: relative;
+    top: -4px;
+    margin-right: 4px;
+}
+
+.header .contenedor-logo .logo {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    position: relative;
+    top: 2px;
+}
+
+.header .barra-busqueda {
+    grid-area: busqueda;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .barra-busqueda input{
+    min-width: 60%;
+    padding: 0 15px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    font-family: 'Open sans', sans-serif;
+}
+
+.header .barra-busqueda button{
+    height: 35px;
+    border: 1px solid #ccc;
+    border-left: none;
+    color: #545454;
+    background: #f8f8f8;
+    padding: 0 25px;
+    cursor: pointer;
+}
+
+.header .barra-busqueda button:hover{
+    background: #f5f5f5;
+}
+
+
+
+.header .botones-header {
+    grid-area: iconos;
+    display: flex;
+    align-items: center;
+}
+
+.header .botones-header button{
+    background: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    padding: 7px 12px;
+    border-radius: 100px;
+    color: #828282;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.header .botones-header button:hover{
+    background-color: #e7e7e7;
+}
+
+.header .botones-header .avatar{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+.header .botones-header .avatar img{
+    vertical-align: top;
+    width: 100%;
+    border-radius: 100px;
+    
+}
+
