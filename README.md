@@ -1,2 +1,5 @@
 # practica-01
- Práctica utilizando HTML, CSS, Flexbox y Grid
+ Clon de Youtube utilizando CSS (práctica de Flexbox y css Grid).
+
+### demo :movie_camera:
+https://adrianaeg.github.io/practica-01/
